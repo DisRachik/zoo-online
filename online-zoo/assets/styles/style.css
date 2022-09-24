@@ -3,3 +3,95 @@
   margin: 0;
   padding: 0;
 }
+* a:focus,
+* a:active {
+  outline: none;
+}
+* a,
+* a:visited,
+* a:hover {
+  text-decoration: none;
+}
+* ul,
+* li {
+  list-style: none;
+}
+
+.fix {
+  min-width: 1600px;
+}
+
+.conteiner {
+  width: 1160px;
+}
+
+.header {
+  height: 80px;
+  background-color: #000000;
+}
+.header .conteiner {
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  width: 1015px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu-item:last-child {
+  width: 37.44%;
+  text-align: right;
+}
+.menu-item__link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.menu-item__link:hover {
+  color: #E47209;
+}
+
+.logo {
+  display: block;
+  width: 82px;
+  height: 52px;
+}
+.logo-frame {
+  width: 100%;
+  height: 100%;
+  border: 1.18841px solid #ffffff;
+}
+.logo-title {
+  width: 72.5px;
+  height: 45px;
+  margin: 3.5px auto;
+  font-weight: 400;
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 120%;
+  position: relative;
+}
+.logo-title::before {
+  content: "";
+  background: url(../icons/bamboo.svg) 0 0 no-repeat;
+  position: absolute;
+  width: 12px;
+  height: 21px;
+  top: 20px;
+  left: 5.5px;
+}

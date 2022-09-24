@@ -1,0 +1,28 @@
+.header {
+  height: 80px;
+  background-color: #000000;
+  .conteiner {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu {
+  width: 1015px;
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    &:last-child {
+      width: 37.44%;
+      text-align: right;
+    }
+    &__link {
+      @include fonts(500, 16px, #ffffff);
+      &:hover {
+        color: #E47209;
+      }
+    }
+  }
+}

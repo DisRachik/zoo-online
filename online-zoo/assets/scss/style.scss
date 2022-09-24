@@ -2,4 +2,30 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
 }
+
+.fix {
+  min-width: 1600px;
+}
+
+.conteiner {
+  width: 1160px;
+}
+
+@import './base/mixin.scss';
+
+@import './blocks/header';
+@import './blocks/logo';
