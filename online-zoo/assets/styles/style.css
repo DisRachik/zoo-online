@@ -23,6 +23,7 @@
 
 .conteiner {
   width: 1160px;
+  margin: 0 auto;
 }
 
 .header {
@@ -30,7 +31,6 @@
   background-color: #000000;
 }
 .header .conteiner {
-  margin: 0 auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,4 +94,70 @@
   height: 21px;
   top: 20px;
   left: 5.5px;
+}
+
+.favorite {
+  padding: 12px 0 100px 0;
+  background: url("../images/bg_panda.jpg") center center/cover no-repeat;
+}
+.favorite .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+.favorite-circle {
+  width: 465px;
+  height: 465px;
+  margin-right: 108.31px;
+  margin-bottom: 69px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+.favorite-title {
+  width: 500.31px;
+  height: 400px;
+  position: absolute;
+  top: 86px;
+  font-weight: 700;
+  font-size: 106.496px;
+  color: #ffffff;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.favorite-title span {
+  color: #FFEE2E;
+}
+.favorite .btn {
+  margin-right: 108.31px;
+}
+
+.btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: #E47209;
+}
+.btn:active {
+  background: #4B9200;
+}
+.btn:visited {
+  background: #767474;
 }

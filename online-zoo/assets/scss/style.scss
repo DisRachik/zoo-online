@@ -23,9 +23,12 @@
 
 .conteiner {
   width: 1160px;
+  margin: 0 auto;
 }
 
 @import './base/mixin.scss';
 
 @import './blocks/header';
 @import './blocks/logo';
+@import './blocks/favorite';
+@import './blocks/button';
