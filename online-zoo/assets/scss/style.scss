@@ -17,6 +17,10 @@
   }
 }
 
+body {
+  background: rgba(253, 253, 255, 0.52);
+}
+
 .fix {
   min-width: 1600px;
 }
@@ -32,3 +36,4 @@
 @import './blocks/logo';
 @import './blocks/favorite';
 @import './blocks/button';
+@import './blocks/backstage';
