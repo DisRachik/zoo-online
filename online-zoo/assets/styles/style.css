@@ -221,6 +221,104 @@ body {
 .pets {
   padding-bottom: 100px;
 }
+.pets .conteiner {
+  position: relative;
+}
 .pets-title {
   display: none;
+}
+.pets-catalog {
+  width: 100%;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pets-catalog__card {
+  width: 31.55%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #fc8023;
+}
+.pets-catalog__card-img {
+  width: 100%;
+}
+.pets-catalog__card .icon-banana::after {
+  content: "";
+  background: url("../icons/pets/banana-bamboo_icon.svg") 0 0 no-repeat;
+  width: 33px;
+  height: 37px;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+.pets-catalog__card .icon-fish::after {
+  content: "";
+  background: url("../icons/pets/meet-fish_icon.svg") 0 0 no-repeat;
+  width: 48px;
+  height: 38px;
+  position: absolute;
+  top: 8px;
+  right: 14px;
+}
+.pets-catalog__card-footer {
+  padding: 8px 0 14px 16px;
+  position: relative;
+}
+.pets-catalog__card-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 140%;
+}
+.pets-catalog__card-text {
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  text-transform: capitalize;
+  line-height: 120%;
+}
+.pets-catalog__card-text span {
+  text-transform: lowercase;
+}
+
+.arrow {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow:active {
+  background: #4B9200;
+}
+.arrow-img {
+  width: 16px;
+  height: 8px;
+  display: block;
+  margin: 50% auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow-left {
+  top: 50%;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  left: -82px;
+}
+
+.arrow-right {
+  top: 50%;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  right: -82px;
 }
