@@ -156,16 +156,21 @@ body {
   text-transform: uppercase;
 }
 .btn:hover {
-  background: #E47209;
+  background: #e47209;
 }
 .btn:active {
-  background: #4B9200;
+  background: #4b9200;
 }
 .btn:visited {
   background: #767474;
 }
 .favorite .btn, .pets .btn {
   border-radius: 25px;
+}
+.pets .btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .backstage {
@@ -219,7 +224,7 @@ body {
 }
 
 .pets {
-  padding-bottom: 100px;
+  position: relative;
 }
 .pets .conteiner {
   position: relative;
@@ -287,6 +292,20 @@ body {
 }
 .pets-catalog__card-text span {
   text-transform: lowercase;
+}
+.pets-flower__left {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -100px;
+  left: -548px;
+}
+.pets-flower__right {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -100px;
+  right: 0;
 }
 
 .arrow {

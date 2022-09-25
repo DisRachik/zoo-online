@@ -8,15 +8,21 @@
   text-transform: uppercase;
   // transition: all 1s;
   &:hover {
-    background: #E47209;
+    background: #e47209;
   }
   &:active {
-    background: #4B9200;
+    background: #4b9200;
   }
   &:visited {
     background: #767474;
   }
-  .favorite &, .pets & {
+  .favorite &,
+  .pets & {
     border-radius: 25px;
+  }
+  .pets & {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
   }
 }
