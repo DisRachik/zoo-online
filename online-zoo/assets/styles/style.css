@@ -148,7 +148,6 @@ body {
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  border-radius: 25px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -164,6 +163,9 @@ body {
 }
 .btn:visited {
   background: #767474;
+}
+.favorite .btn, .pets .btn {
+  border-radius: 25px;
 }
 
 .backstage {
@@ -214,4 +216,11 @@ body {
   position: absolute;
   top: 12px;
   right: -98px;
+}
+
+.pets {
+  padding-bottom: 100px;
+}
+.pets-title {
+  display: none;
 }

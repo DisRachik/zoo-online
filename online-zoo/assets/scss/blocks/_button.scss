@@ -2,7 +2,6 @@
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  border-radius: 25px;
   border: none;
   cursor: pointer;
   @include fonts(500, 16px, #ffffff);
@@ -16,5 +15,8 @@
   }
   &:visited {
     background: #767474;
+  }
+  .favorite &, .pets & {
+    border-radius: 25px;
   }
 }
