@@ -1,6 +1,7 @@
 .header {
   height: 80px;
   background-color: #000000;
+  backdrop-filter: blur(2px);
   .conteiner {
     height: 100%;
     display: flex;
@@ -20,7 +21,7 @@
     &__link {
       @include fonts(500, 16px, #ffffff);
       &:hover {
-        color: #E47209;
+        color: mix(#F9804B, #FE9013);
       }
     }
   }

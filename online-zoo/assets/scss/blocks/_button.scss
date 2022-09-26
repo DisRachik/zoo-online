@@ -17,12 +17,25 @@
     background: #767474;
   }
   .favorite &,
-  .pets & {
+  .pets &,
+  .feed & {
     border-radius: 25px;
   }
   .pets & {
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+  }
+  &-link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: #e47209;
+    }
+    &:active {
+      background: #4b9200;
+    }
   }
 }
