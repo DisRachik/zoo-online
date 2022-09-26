@@ -172,6 +172,11 @@ body {
 .menu-item__link:hover {
   color: #fc882f;
 }
+.menu-item .not-active {
+  pointer-events: none;
+  cursor: default;
+  color: #fc882f;
+}
 
 .logo {
   display: block;

@@ -21,8 +21,13 @@
     &__link {
       @include fonts(500, 16px, #ffffff);
       &:hover {
-        color: mix(#F9804B, #FE9013);
+        color: mix(#f9804b, #fe9013);
       }
+    }
+    & .not-active {
+      pointer-events: none;
+      cursor: default;
+      color: mix(#f9804b, #fe9013);
     }
   }
 }
