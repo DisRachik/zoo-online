@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   &-item {
-    &:last-child {
+    &:nth-child(6) {
       width: 37.44%;
       text-align: right;
     }
