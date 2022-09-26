@@ -1,3 +1,105 @@
+@-webkit-keyframes icon-increase {
+  from {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes icon-increase {
+  from {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@-webkit-keyframes text-up {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    text-align: center;
+    font-size: 25px;
+  }
+  to {
+    -webkit-transform: translateY(-1000%);
+            transform: translateY(-1000%);
+    color: rgb(255, 238, 46);
+    text-align: center;
+    font-size: 22px;
+  }
+}
+@keyframes text-up {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    text-align: center;
+    font-size: 25px;
+  }
+  to {
+    -webkit-transform: translateY(-1000%);
+            transform: translateY(-1000%);
+    color: rgb(255, 238, 46);
+    text-align: center;
+    font-size: 22px;
+  }
+}
+@-webkit-keyframes blackout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 0.3;
+  }
+}
+@keyframes blackout {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 0.3;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -247,12 +349,33 @@ body {
 .pets-catalog__card {
   width: 31.55%;
   margin-bottom: 20px;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 5px;
   border: 1px solid #fc8023;
+  position: relative;
 }
 .pets-catalog__card-img {
   width: 100%;
+}
+.pets-catalog__card:hover .icon-animated {
+  position: relative;
+  -webkit-animation: icon-increase 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: icon-increase 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.pets-catalog__card:hover .text-animated {
+  position: relative;
+  -webkit-animation: text-up 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: text-up 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 2;
+}
+.pets-catalog__card:hover .card-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #000000;
+  -webkit-animation: blackout 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: blackout 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .pets-catalog__card .icon-banana::after {
   content: "";
@@ -312,12 +435,12 @@ body {
   width: 62px;
   height: 62px;
   position: absolute;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 50%;
   cursor: pointer;
 }
 .arrow:active {
-  background: #4B9200;
+  background: #4b9200;
 }
 .arrow-img {
   width: 16px;

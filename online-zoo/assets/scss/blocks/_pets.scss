@@ -15,11 +15,33 @@
     &__card {
       width: 31.55%;
       margin-bottom: 20px;
-      overflow: hidden;
+      overflow: visible;
       border-radius: 5px;
-      border: 1px solid mix(#FA6F32, #FE9013);
+      border: 1px solid mix(#fa6f32, #fe9013);
+      position: relative;
       &-img {
         width: 100%;
+      }
+      &:hover {
+        .icon-animated {
+          position: relative;
+          animation: icon-increase 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+        }
+        .text-animated {
+          position: relative;
+          // text-align: center;
+          animation: text-up 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          z-index: 2;
+        }
+        .card-shadow {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          background-color: #000000;
+          animation: blackout 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
       }
       .icon-banana {
         &::after {
@@ -62,14 +84,14 @@
       }
     }
   }
-    &-flower__left {
+  &-flower__left {
     display: block;
     position: absolute;
     z-index: -1;
     bottom: -100px;
     left: -548px;
   }
-    &-flower__right {
+  &-flower__right {
     display: block;
     position: absolute;
     z-index: -1;
@@ -81,11 +103,11 @@
   width: 62px;
   height: 62px;
   position: absolute;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 50%;
   cursor: pointer;
   &:active {
-    background: #4B9200;
+    background: #4b9200;
   }
   &-img {
     width: 16px;
