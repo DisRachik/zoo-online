@@ -533,8 +533,8 @@ body {
 .feed .feed-info__subtext-link {
   text-decoration: underline;
   color: #333b41;
-  -webkit-text-decoration-color: #FE9013;
-          text-decoration-color: #FE9013;
+  -webkit-text-decoration-color: #fe9013;
+          text-decoration-color: #fe9013;
 }
 .feed .feed-info__subtext-link:active {
   color: #fc882f;
@@ -588,12 +588,26 @@ body {
   margin-top: 30px;
   font-weight: 400;
   font-size: 16px;
-  color: #333B41;
+  color: #333b41;
   line-height: 140%;
 }
 .feed-work__nextimg {
   -ms-flex-preferred-size: 11.21%;
       flex-basis: 11.21%;
+  height: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feed-work__nextimg-vector {
+  width: 69px;
+  height: 35.08px;
 }
 .feed .btn {
   margin: 0 auto;
