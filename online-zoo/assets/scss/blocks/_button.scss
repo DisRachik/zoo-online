@@ -3,6 +3,7 @@
   height: 54px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   @include fonts(500, 16px, #ffffff);
   text-transform: uppercase;
