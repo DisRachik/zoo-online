@@ -372,10 +372,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer-link:active .footer-link__img {
+.footer-link a:active .footer-link__img {
   background: #4b9200;
 }
-.footer-link:active .footer-link__name {
+.footer-link a:active .footer-link__name {
   color: #4b9200;
 }
 .footer-link__img {

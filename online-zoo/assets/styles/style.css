@@ -748,6 +748,11 @@ body {
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
 }
+.testimonials-dot:hover {
+  background: #fe9013;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .testimonials-flower {
   display: block;
   position: absolute;
@@ -859,10 +864,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer-link:active .footer-link__img {
+.footer-link a:active .footer-link__img {
   background: #4b9200;
 }
-.footer-link:active .footer-link__name {
+.footer-link a:active .footer-link__name {
   color: #4b9200;
 }
 .footer-link__img {

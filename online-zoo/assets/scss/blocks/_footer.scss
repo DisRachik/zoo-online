@@ -62,8 +62,6 @@
   &-link a {
     display: flex;
     align-items: center;
-  }
-  &-link {
     &:active {
       .footer-link__img {
         background: #4b9200;
@@ -72,6 +70,8 @@
         color: #4b9200;
       }
     }
+  }
+  &-link {
     &__img {
       width: 26px;
       height: 26px;
