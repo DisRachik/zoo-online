@@ -64,6 +64,137 @@
       @include fonts(400, 24px, #333b41);
       line-height: 120%;
     }
-
   }
+
+  &-pet {
+    max-width: 532px;
+    margin: 0 auto;
+    padding-left: 14px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__amount {
+      display: flex;
+
+      &-number {
+        &-num {
+          margin-bottom: 11px;
+          @include fonts(500, 72px, #000000);
+          text-align: center;
+        }
+        &-text {
+          margin-bottom: 50px;
+          @include fonts(400, 16px, #333b41);
+        }
+        &-multiplier {
+          margin: 25px 0 0 11px;
+          font-size: 26.25px;
+          color: #333b41;
+        }
+      }
+    }
+    &__img {
+      max-width: 284px;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-amount {
+    @include fonts(400, 16px, #000000);
+    margin-bottom: 10px;
+  }
+  &-bar {
+    margin-bottom: 12px;
+    padding: 0 30px 0 26px;
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #404950;
+    border-radius: 2px;
+    box-sizing: border-box;
+    &__line {
+      width: 93.75%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #72828e;
+      z-index: 1;
+    }
+
+    &__big-circle,
+    &__small-circle {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #fe9013;
+        opacity: 0.8;
+      }
+    }
+    &__big-circle {
+      margin: -15px;
+    }
+    &__small-circle {
+      width: 22.95px;
+      height: 22.95px;
+    }
+    &__dot {
+      width: 10px;
+      height: 10px;
+      background: #ffee2e;
+      border-radius: 50%;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  &-money {
+    margin-bottom: 50px;
+    // padding-right: 29px;
+    padding-left: 10px;
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__sum {
+      width: 5.5%;
+      @include fonts(500, 26px, #333B41);
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../icons/donate_page/dollar-black.svg') 0 0 no-repeat;
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+      }
+    }
+  }
+
+  &-text__bottom {
+    @include fonts(400, 16px, #333b41);
+    text-align: center;
+    line-height: 140%;
+  }
+}
+.pick-bar__dot-active {
+  border: 2px solid #fe9013;
+  cursor: default;
 }
