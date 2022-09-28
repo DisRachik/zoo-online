@@ -859,6 +859,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.footer-link:active .footer-link__img {
+  background: #4b9200;
+}
+.footer-link:active .footer-link__name {
+  color: #4b9200;
+}
 .footer-link__img {
   width: 26px;
   height: 26px;
@@ -874,15 +880,9 @@ body {
           align-items: center;
   background: rgba(196, 196, 196, 0.5);
 }
-.footer-link__img:active {
-  background: #4b9200;
-}
 .footer-link__name {
   margin-left: 12px;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
-}
-.footer-link__name:active {
-  color: #4b9200;
 }
