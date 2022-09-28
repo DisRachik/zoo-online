@@ -19,13 +19,18 @@
   }
   .favorite &,
   .pets &,
-  .feed & {
+  .feed &,
+  .pick & {
     border-radius: 25px;
   }
-  .pets & {
+  .pets &,
+  .pick & {
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+  }
+  .pick & {
+    margin-bottom: 30.02px;
   }
   &-link {
     display: block;
@@ -45,7 +50,7 @@
     border: 1px solid #d31414;
     border-radius: 5px;
     @include fonts(400, 16px, #d31414);
-    background: #F1F3F2;
+    background: #f1f3f2;
     cursor: pointer;
   }
 }

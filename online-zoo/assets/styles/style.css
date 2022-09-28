@@ -230,13 +230,16 @@ body {
 .btn:visited {
   background: #767474;
 }
-.favorite .btn, .pets .btn, .feed .btn {
+.favorite .btn, .pets .btn, .feed .btn, .pick .btn {
   border-radius: 25px;
 }
-.pets .btn {
+.pets .btn, .pick .btn {
   display: block;
   margin: 0 auto;
   margin-bottom: 100px;
+}
+.pick .btn {
+  margin-bottom: 30.02px;
 }
 .btn-link {
   display: block;
@@ -264,7 +267,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #d31414;
-  background: #F1F3F2;
+  background: #f1f3f2;
   cursor: pointer;
 }
 
