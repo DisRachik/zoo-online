@@ -127,7 +127,7 @@ body {
   min-width: 1600px;
 }
 
-.conteiner {
+.container {
   width: 1160px;
   margin: 0 auto;
 }
@@ -138,7 +138,7 @@ body {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-.header .conteiner {
+.header .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,7 +272,7 @@ body {
   padding: 12px 0 100px 0;
   background: url("../images/bg_panda.jpg") center center/cover no-repeat;
 }
-.favorite .conteiner {
+.favorite .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +318,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.backstage .conteiner {
+.backstage .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@ body {
 .pets {
   position: relative;
 }
-.pets .conteiner {
+.pets .container {
   position: relative;
 }
 .pets-title {
