@@ -26,6 +26,12 @@
       background: #111115;
       @include fonts(400, 16px, #bdbdbd);
     }
+    .input-number:focus {
+      border-color: #4b9200;
+    }
+    .input-number:invalid {
+      border-color: #d31414;
+    }
   }
   &-bottom {
     width: 100%;

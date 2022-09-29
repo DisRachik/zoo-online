@@ -89,61 +89,82 @@
               </div>
 
               <h3 class="pick-amount">Amount</h3>
-                <div class="pick-bar">
-                  <hr class="pick-bar__line" />
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle pick-bar__dot-active">
-                    <div class="pick-bar__small-circle pick-bar__dot-active">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
-                  </div>
-                  <div class="pick-bar__big-circle">
-                    <div class="pick-bar__small-circle">
-                      <div class="pick-bar__dot"></div>
-                    </div>
+              <div class="pick-bar">
+                <hr class="pick-bar__line" />
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
                   </div>
                 </div>
-                <ul class="pick-money">
-                  <li class="pick-money__sum">5000</li>
-                  <li class="pick-money__sum">2000</li>
-                  <li class="pick-money__sum">1000</li>
-                  <li class="pick-money__sum">500</li>
-                  <li class="pick-money__sum">250</li>
-                  <li class="pick-money__sum">100</li>
-                  <li class="pick-money__sum">50</li>
-                  <li class="pick-money__sum">25</li>
-                </ul>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle pick-bar__dot-active">
+                  <div class="pick-bar__small-circle pick-bar__dot-active">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+                <div class="pick-bar__big-circle">
+                  <div class="pick-bar__small-circle">
+                    <div class="pick-bar__dot"></div>
+                  </div>
+                </div>
+              </div>
+              <ul class="pick-money">
+                <li class="pick-money__sum">5000</li>
+                <li class="pick-money__sum">2000</li>
+                <li class="pick-money__sum pick-money__sum-active">1000</li>
+                <li class="pick-money__sum">500</li>
+                <li class="pick-money__sum">250</li>
+                <li class="pick-money__sum">100</li>
+                <li class="pick-money__sum">50</li>
+                <li class="pick-money__sum">25</li>
+              </ul>
 
+              <form action="#" class="pick-form">
+                <input
+                  placeholder="Another amount"
+                  max="5000"
+                  class="pick-form__input input-number"
+                  type="number"
+                />
+                <div class="pick-form__radio-holder">
+                  <input name="radio" class="pick-form__radio" type="radio" id="monthly" />
+                  <label class="pick-form__radio-label" for="monthly">Monthly</label>
+  
+                  <input
+                    name="radio"
+                    class="pick-form__radio"
+                    type="radio"
+                    id="once"
+                    checked="checked"
+                  />
+                  <label class="pick-form__radio-label" for="once">Once</label>
+                </div>
                 <button class="btn">Feed a friend now</button>
+              </form>
 
               <p class="pick-text__bottom">Share with your friends on social networks</p>
             </div>

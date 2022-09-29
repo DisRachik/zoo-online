@@ -173,7 +173,7 @@
     align-items: center;
     &__sum {
       width: 5.5%;
-      @include fonts(500, 26px, #333B41);
+      @include fonts(500, 26px, #333b41);
       position: relative;
       &::before {
         content: '';
@@ -187,6 +187,47 @@
       }
     }
   }
+  &-form {
+    max-width: 298px;
+    margin: 0 auto;
+    &__input {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 25px;
+      background: url('../icons/donate_page/dollar-grey.svg') 90% 50% no-repeat;
+    }
+    &__radio-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    &__radio {
+      display: none;
+    }
+    &__radio:checked + &__radio-label::before {
+      background-color: #f9804b;
+    }
+    &__radio-label {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-right: 33px;
+    }
+    &__radio-label::before {
+      content: '';
+      height: 16px;
+      width: 16px;
+      border: 1px solid #f9804b;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    &__radio-label:last-child {
+      margin-right: 0;
+    }
+  }
 
   &-text__bottom {
     @include fonts(400, 16px, #333b41);
@@ -197,4 +238,34 @@
 .pick-bar__dot-active {
   border: 2px solid #fe9013;
   cursor: default;
+}
+.pick-money__sum-active {
+  color: #fe9013;
+  &::before {
+    background: url('../icons/donate_page/dollar-gold.svg') 0 0 no-repeat;
+  }
+}
+.input-number {
+  background-color: transparent;
+  border: 1px solid #f9804b;
+  padding: 10px;
+  max-width: 228px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+  position: relative;
+  border-color: #929699;
+  border-radius: 2px;
+  max-width: 268px;
+  padding: 16px 10px;
+  color: #333b41;
+}
+.input-number::placeholder {
+  color: #929699;
+}
+.input-number:focus {
+  border-color: #4b9200;
+}
+.input-number:invalid {
+  border-color: #d31414;
 }

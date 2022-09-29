@@ -262,11 +262,11 @@ body {
 .btn-form {
   width: 129px;
   height: 42px;
-  border: 1px solid #d31414;
+  border: 1px solid #000000;
   border-radius: 5px;
   font-weight: 400;
   font-size: 16px;
-  color: #d31414;
+  color: #000000;
   background: #f1f3f2;
   cursor: pointer;
 }
@@ -468,7 +468,7 @@ body {
   width: 5.5%;
   font-weight: 500;
   font-size: 26px;
-  color: #333B41;
+  color: #333b41;
   position: relative;
 }
 .pick-money__sum::before {
@@ -482,6 +482,57 @@ body {
           transform: translateY(-50%);
   left: -10px;
 }
+.pick-form {
+  max-width: 298px;
+  margin: 0 auto;
+}
+.pick-form__input {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 25px;
+  background: url("../icons/donate_page/dollar-grey.svg") 90% 50% no-repeat;
+}
+.pick-form__radio-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.pick-form__radio {
+  display: none;
+}
+.pick-form__radio:checked + .pick-form__radio-label::before {
+  background-color: #f9804b;
+}
+.pick-form__radio-label {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 33px;
+}
+.pick-form__radio-label::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 1px solid #f9804b;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.pick-form__radio-label:last-child {
+  margin-right: 0;
+}
 .pick-text__bottom {
   font-weight: 400;
   font-size: 16px;
@@ -493,6 +544,57 @@ body {
 .pick-bar__dot-active {
   border: 2px solid #fe9013;
   cursor: default;
+}
+
+.pick-money__sum-active {
+  color: #fe9013;
+}
+.pick-money__sum-active::before {
+  background: url("../icons/donate_page/dollar-gold.svg") 0 0 no-repeat;
+}
+
+.input-number {
+  background-color: transparent;
+  border: 1px solid #f9804b;
+  padding: 10px;
+  max-width: 228px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+  position: relative;
+  border-color: #929699;
+  border-radius: 2px;
+  max-width: 268px;
+  padding: 16px 10px;
+  color: #333b41;
+}
+
+.input-number::-webkit-input-placeholder {
+  color: #929699;
+}
+
+.input-number::-moz-placeholder {
+  color: #929699;
+}
+
+.input-number:-ms-input-placeholder {
+  color: #929699;
+}
+
+.input-number::-ms-input-placeholder {
+  color: #929699;
+}
+
+.input-number::placeholder {
+  color: #929699;
+}
+
+.input-number:focus {
+  border-color: #4b9200;
+}
+
+.input-number:invalid {
+  border-color: #d31414;
 }
 
 .footer {
@@ -536,6 +638,12 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #bdbdbd;
+}
+.footer-form .input-number:focus {
+  border-color: #4b9200;
+}
+.footer-form .input-number:invalid {
+  border-color: #d31414;
 }
 .footer-bottom {
   width: 100%;
