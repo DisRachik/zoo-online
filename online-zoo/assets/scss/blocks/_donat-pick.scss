@@ -1,0 +1,271 @@
+.panda-bg {
+  width: 100%;
+  height: 390px;
+  background: url('../images/donate_page/panda_bg-min.jpg') center (center / cover) no-repeat;
+}
+
+.pick {
+  padding: 40px 0 180px 0;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  &-title {
+    margin-bottom: 10px;
+    @include fonts(400, 36px, #ffffff);
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+  &-text {
+    margin-bottom: 40px;
+    @include fonts(500, 16px, #ffffff);
+    line-height: 140%;
+  }
+  &-subtitle {
+    margin-bottom: 60px;
+    @include fonts(400, 36px, #fe9013);
+    line-height: 130%;
+  }
+
+  &-info {
+    padding: 40px 92px 62px 92px;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    &__title {
+      margin-bottom: 20px;
+      height: 58px;
+      @include fonts(400, 48px, #fe9013);
+      text-align: center;
+      line-height: 120%;
+    }
+    &__text {
+      margin-bottom: 60px;
+      @include fonts(400, 24px, #333b41);
+      line-height: 120%;
+    }
+  }
+
+  &-pet {
+    max-width: 532px;
+    margin: 0 auto;
+    padding-left: 14px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__amount {
+      display: flex;
+
+      &-number {
+        &-num {
+          margin-bottom: 11px;
+          @include fonts(500, 72px, #000000);
+          text-align: center;
+        }
+        &-text {
+          margin-bottom: 50px;
+          @include fonts(400, 16px, #333b41);
+        }
+        &-multiplier {
+          margin: 25px 0 0 11px;
+          font-size: 26.25px;
+          color: #333b41;
+        }
+      }
+    }
+    &__img {
+      max-width: 284px;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  &-amount {
+    @include fonts(400, 16px, #000000);
+    margin-bottom: 10px;
+  }
+  &-bar {
+    margin-bottom: 12px;
+    padding: 0 30px 0 26px;
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #404950;
+    border-radius: 2px;
+    box-sizing: border-box;
+    &__line {
+      width: 93.75%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #72828e;
+      z-index: 1;
+    }
+
+    &__big-circle,
+    &__small-circle {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      border-radius: 50%;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #fe9013;
+        opacity: 0.8;
+      }
+    }
+    &__big-circle {
+      margin: -15px;
+    }
+    &__small-circle {
+      width: 22.95px;
+      height: 22.95px;
+    }
+    &__dot {
+      width: 10px;
+      height: 10px;
+      background: #ffee2e;
+      border-radius: 50%;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  &-money {
+    margin-bottom: 50px;
+    // padding-right: 29px;
+    padding-left: 10px;
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__sum {
+      width: 5.5%;
+      @include fonts(500, 26px, #333b41);
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../icons/donate_page/dollar-black.svg') 0 0 no-repeat;
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+      }
+    }
+  }
+  &-form {
+    max-width: 298px;
+    margin: 0 auto;
+    &__input {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 25px;
+      background: url('../icons/donate_page/dollar-grey.svg') 90% 50% no-repeat;
+    }
+    &__radio-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    &__radio {
+      display: none;
+    }
+    &__radio:checked + &__radio-label::before {
+      background-color: #f9804b;
+    }
+    &__radio-label {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-right: 33px;
+    }
+    &__radio-label::before {
+      content: '';
+      height: 16px;
+      width: 16px;
+      border: 1px solid #f9804b;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    &__radio-label:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-text__bottom {
+    @include fonts(400, 16px, #333b41);
+    text-align: center;
+    line-height: 140%;
+  }
+}
+.pick-bar__dot-active {
+  border: 2px solid #fe9013;
+  cursor: default;
+}
+.pick-money__sum-active {
+  color: #fe9013;
+  &::before {
+    background: url('../icons/donate_page/dollar-gold.svg') 0 0 no-repeat;
+  }
+}
+.input-number {
+  background-color: transparent;
+  border: 1px solid #f9804b;
+  padding: 10px;
+  max-width: 228px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+  position: relative;
+  border-color: #929699;
+  border-radius: 2px;
+  max-width: 268px;
+  padding: 16px 10px;
+  color: #333b41;
+}
+.input-number::placeholder {
+  color: #929699;
+}
+.input-number:focus {
+  border-color: #4b9200;
+}
+.input-number:invalid {
+  border-color: #d31414;
+}

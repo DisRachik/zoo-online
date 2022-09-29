@@ -1,0 +1,39 @@
+.backstage {
+  padding-top: 140px;
+  padding-bottom: 180px;
+  position: relative;
+  overflow: hidden;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &-img {
+    width: 52.5%;
+  }
+  &-content {
+    width: 40.09%;
+    &__title {
+      @include fonts(400, 48px, #333b41);
+      margin-bottom: 20px;
+      line-height: 120%;
+      text-transform: capitalize;
+      span {
+        text-transform: lowercase;
+      }
+    }
+    &__subtitle {
+      margin: 52px 0 32px 0;
+      @include fonts(400, 24px, #333b41);
+    }
+    &__text {
+      @include fonts(400, 16px, #333b41);
+      line-height: 140%;
+    }
+  }
+  &-flower {
+    position: absolute;
+    top: 12px;
+    right: -98px;
+  }
+}

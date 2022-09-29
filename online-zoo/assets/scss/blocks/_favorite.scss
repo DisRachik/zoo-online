@@ -1,0 +1,34 @@
+.favorite {
+  padding: 12px 0 100px 0;
+  background: url('../images/bg_panda.jpg') center (center / cover) no-repeat;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+  &-circle {
+    width: 465px;
+    height: 465px;
+    margin-right: 108.31px;
+    margin-bottom: 69px;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 50%;
+  }
+  &-title {
+    width: 500.31px;
+    height: 400px;
+    position: absolute;
+    top: 86px;
+    @include fonts(700, 106.496px, #ffffff);
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+      color: #FFEE2E;
+    }
+  }
+  .btn {
+    margin-right: 108.31px;
+  }
+}

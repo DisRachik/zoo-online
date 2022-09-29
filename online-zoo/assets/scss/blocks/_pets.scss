@@ -1,0 +1,129 @@
+.pets {
+  position: relative;
+  .container {
+    position: relative;
+  }
+  &-title {
+    display: none;
+  }
+  &-catalog {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__card {
+      width: 31.55%;
+      margin-bottom: 20px;
+      overflow: visible;
+      border-radius: 5px;
+      border: 1px solid mix(#fa6f32, #fe9013);
+      position: relative;
+      &-img {
+        width: 100%;
+      }
+      &:hover {
+        .icon-animated {
+          position: relative;
+          animation: icon-increase 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+        }
+        .text-animated {
+          position: relative;
+          // text-align: center;
+          animation: text-up 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          z-index: 2;
+        }
+        .card-shadow {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          background-color: #000000;
+          animation: blackout 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+      }
+      .icon-banana {
+        &::after {
+          content: '';
+          background: url('../icons/pets/banana-bamboo_icon.svg') 0 0 no-repeat;
+          width: 33px;
+          height: 37px;
+          position: absolute;
+          top: 10px;
+          right: 13px;
+        }
+      }
+      .icon-fish {
+        &::after {
+          content: '';
+          background: url('../icons/pets/meet-fish_icon.svg') 0 0 no-repeat;
+          width: 48px;
+          height: 38px;
+          position: absolute;
+          top: 8px;
+          right: 14px;
+        }
+      }
+      &-footer {
+        padding: 8px 0 14px 16px;
+        position: relative;
+      }
+      &-title {
+        @include fonts(500, 16px, #000000);
+        text-transform: uppercase;
+        line-height: 140%;
+      }
+      &-text {
+        @include fonts(300, 15px, #000000);
+        text-transform: capitalize;
+        line-height: 120%;
+        span {
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+  &-flower__left {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -100px;
+    left: -548px;
+  }
+  &-flower__right {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -100px;
+    right: 0;
+  }
+}
+.arrow {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+  cursor: pointer;
+  &:active {
+    background: #4b9200;
+  }
+  &-img {
+    width: 16px;
+    height: 8px;
+    display: block;
+    margin: 50% auto;
+    transform: translateY(-50%);
+  }
+}
+.arrow-left {
+  top: 50%;
+  transform: translateY(-150%);
+  left: -82px;
+}
+.arrow-right {
+  top: 50%;
+  transform: translateY(-150%);
+  right: -82px;
+}
